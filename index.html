@@ -7,9 +7,10 @@
     <title>Portfolio</title>
 
 <style type="text/css">
-/* body * {
-    outline: 1px solid black;
-} */
+body * {
+    /* outline: 1px solid black; */
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 div.container {
     width: 980px;
@@ -23,12 +24,14 @@ div.container {
         justify-content: space-between;
         align-items: center;
         margin: auto;
+        height: 75px;
         padding: 0px 10px;
     }
     
         div.container div.header h1 {
             display: inline-block;
             font-size: 50px;
+            font-family: "Comic Sans MS", cursive, sans-serif;
         }
 
         div.container div.header p {
@@ -37,7 +40,8 @@ div.container {
         }
 
 div.content-wrapper {
-    background-image: radial-gradient(circle, grey, purple);
+    background-image: radial-gradient(circle, #6f5964, #1b0b0f);
+    height: 1005px;
 }
     
     div.content-wrapper div.content {
@@ -54,10 +58,11 @@ div.content-wrapper {
         width: fit-content;
         height: fit-content;
         margin: 0px 10px;
+        padding: 0px;
     }
 
     .grad {
-        background-image: linear-gradient(90deg, whitesmoke, #cc99ff);
+        background-image: linear-gradient(90deg, whitesmoke, #dbccda);
     }
 
         div.content-wrapper div.content div.row1-content img {
@@ -66,33 +71,83 @@ div.content-wrapper {
         }
 
         div.content-wrapper div.content div.row1-content h2 {
-            background-image: linear-gradient(silver, grey, silver);
+            background-image: linear-gradient(silver, #878593, silver);
             padding: 5px 10px;
             margin: 0px;
             color: whitesmoke;
         }
 
         div.content-wrapper div.content div.row1-content p {
-            padding: 6px 10px;
+            padding: 3px 10px;
             font-size: 16px;
         }
-    div.content-wrapper div.content div.row2-content {
-        display: inline-block;
-        min-height: 500px;
-        min-width: 250px;
+
+    div.content-wrapper div.content2 {
+        display: flex;
+        justify-content: space-between;
+        width: auto;
+        margin: 0px 25px;
+        padding: 0px;
     }
-        div.content-wrapper div.content div.row2-content h2 {
-            background-image: linear-gradient(silver, grey, silver);
+    div.content-wrapper div.content2 div.row2-content {
+        height: 650px;
+        width: 300px;
+        position: relative;
+    }
+        div.content-wrapper div.content2 div.row2-content h2 {
+            background-image: linear-gradient(silver, #878593, silver);
             padding: 5px 10px;
             margin: 0px;
             color: whitesmoke;
         }
 
-        div.content-wrapper div.content div.row2-content img {
+        div.content-wrapper div.content2 div.row2-content img {
             width: 300px;
             padding: 0px;
         }
 
+        div.content-wrapper div.content2 div.row2-content p {
+            padding: 10px;
+            text-align: justify;
+        }
+
+            div.content-wrapper div.content2 div.row2-content div.technologies {
+                /* padding: 10px; */
+                /* height: 150px; */
+                margin: 0px;
+                padding-bottom: 15px;
+                position: absolute;
+                bottom: 0;
+            }
+
+            div.content-wrapper div.content2 div.row2-content div.technologies h2.techbanner {
+                background-image: linear-gradient(silver, #878593, silver);
+                padding: 5px 10px;
+                margin: 0px 0px 10px 0px;
+                color: whitesmoke;
+                font-size: 1.1em;
+            }
+
+            div.content-wrapper div.content2 div.row2-content div.technologies img {
+                display: inline-block;
+                width: 40px;
+                margin: 5px;
+                padding: 2px;
+            }
+
+            div.content-wrapper div.content2 div.row2-content div.technologies a {
+                display: block;
+                background-color: #407d61;
+                text-decoration: none;
+                text-align: center;
+                font-weight: bold;
+                width: fit-content;
+                color: whitesmoke;
+                margin: auto;
+                padding: 10px;
+                border: 1px solid black;
+                border-radius: 10px;
+            }
 </style>
 
 </head>
@@ -114,23 +169,69 @@ div.content-wrapper {
                     <p><a href="#">Continue reading...</a></p>
                 </div>
             </div>
-            <div class="content">
+            <div class="content2">
                 <div class="row2-content grad">
                     <h2>La Mode</h2>
                     <img src="img/lamode.png" alt="La Mode">
+                    <p>La Mode is an Ecommerce website for designed to market various clothing products. Users are able to view the available garments, select their desired quantity, and compile a shopping cart for making a final purchase.</p>
+                    <div class="technologies">
+                        <h2 class="techbanner">Technologies:</h2>
+                        <img src="img/php.png" alt="PHP">
+                        <img src="img/codeigniter.png" alt="CodeIgniter">
+                        <img src="img/jQuery.png" alt="jQuery">
+                        <img src="img/ajax.png" alt="ajax">
+                        <img src="img/mysql.png" alt="MySQL">
+                        <img src="img/HTML.png" alt="HTML">
+                        <img src="img/CSS.png" alt="CSS">
+                        <img src="img/bootstrap.png" alt="bootstrap">
+                        <a href="#">La Mode</a>
+                    </div>
                 </div>
                 <div class="row2-content grad">
                     <h2>Family Contacts</h2>
                     <img src="img/familycontacts.png" alt="Family Contacts">
+                    <p>Family Contacts is a free application for managing, sharing, and visualizing your family relationships for both extended and immediate family. As an essential feature of the project, your log-in information determines who you can see and reveals how people are related to you.</p>
+                        <div class="technologies">
+                            <h2 class="techbanner">Technologies:</h2>
+                            <img src="img/JavaScript.png" alt="JavaScript">
+                            <img src="img/mongodb.png" alt="mongodb">
+                            <img src="img/expressjs.png" alt="expressjs">
+                            <img src="img/angular.png" alt="angular">
+                            <img src="img/nodejs.png" alt="nodejs">
+                            <img src="img/HTML.png" alt="HTML">
+                            <img src="img/CSS.png" alt="CSS">
+                            <img src="img/socket.png" alt="socket">
+                            <a href="#">Family Contacts</a>
+                        </div>
                 </div>
                 <div class="row2-content grad">
                     <h2>fiveEleven</h2>
                     <img src="img/fiveEleven.png" alt="fiveEleven">
+                    <p>Five Eleven is a data visualization project built on the Python software stack. The application transforms the developer job-hunt into a more visual, user friendly experience. Based on location, technology popularity, and other vast data sets, users may easily visualize the varying sizes and concentrations of the junior developer job market across the nation.</p>
+                        <div class="technologies">
+                            <h2 class="techbanner">Technologies:</h2>
+                            <img src="img/python.png" alt="Python">
+                            <img src="img/django.png" alt="django">
+                            <img src="img/d3.png" alt="d3">
+                            <img src="img/angular.png" alt="angular">
+                            <img src="img/sqlite.png" alt="sqlite">
+                            <img src="img/HTML.png" alt="HTML">
+                            <img src="img/CSS.png" alt="CSS">
+                            <img src="img/JavaScript.png" alt="JavaScript">
+                            <img src="img/materialize.png" alt="Materialize">
+                            <a href="#">fiveEleven</a>
+                        </div>
                 </div>
             </div>
         </div>
         <div class="footer">
-
+            <p>jdoe@gmails.com | 206-555-1212</p>
+            <ul>
+                <li>jaynedev</li>
+                <li>jayne-doe</li>
+                <li>jdtweets</li>
+                <li>jaynedev</li>
+            </ul>
         </div>
     </div>
 </body>
