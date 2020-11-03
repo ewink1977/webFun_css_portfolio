@@ -5,7 +5,7 @@ body * {
 
 div.container {
     width: 980px;
-    min-height: 800px;
+    min-height: 835px;
     margin: 0px auto;
 }
 
@@ -86,7 +86,8 @@ div.content-wrapper {
 
         div.content-wrapper div.content div.row1-content img {
             border: 5px solid grey;
-            width: 440px;
+            box-sizing: border-box;
+            width: 453px;
         }
 
         div.content-wrapper div.content div.row1-content h2 {
@@ -109,9 +110,7 @@ div.content-wrapper {
         padding: 0px;
     }
     div.content-wrapper div.content2 div.row2-content {
-        height: 650px;
         width: 300px;
-        position: relative;
     }
         div.content-wrapper div.content2 div.row2-content h2 {
             background-image: linear-gradient(silver, #878593, silver);
@@ -127,14 +126,13 @@ div.content-wrapper {
 
         div.content-wrapper div.content2 div.row2-content p {
             padding: 10px;
+            min-height: 185px;
             text-align: justify;
         }
 
             div.content-wrapper div.content2 div.row2-content div.technologies {
-                margin: 0px;
+                margin-bottom: 0px;
                 padding-bottom: 15px;
-                position: absolute;
-                bottom: 0;
             }
 
             div.content-wrapper div.content2 div.row2-content div.technologies h2.techbanner {
@@ -149,7 +147,7 @@ div.content-wrapper {
                 display: inline-block;
                 width: 40px;
                 margin: 5px;
-                padding: 2px;
+                padding: 3px;
             }
 
             div.content-wrapper div.content2 div.row2-content div.technologies a {
